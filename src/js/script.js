@@ -42,6 +42,9 @@
         canvas.width = videoElemento.videoWidth;
         canvas.height = videoElemento.videoHeight;
 
+        contexto.translate(canvas.width, 0);
+        contexto.scale(-1, 1);
+
         //reset para garantir que a foto nao saia invertida
         contexto.setTransform(1,0,0,1,0,0)
 
